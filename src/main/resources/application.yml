@@ -1,0 +1,15 @@
+## Spring DataSource
+# DataSource Properties
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/books_database?allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false"
+    username:
+    password:
+  jpa:
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.MySQL5InnoDBDialect"
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8081
